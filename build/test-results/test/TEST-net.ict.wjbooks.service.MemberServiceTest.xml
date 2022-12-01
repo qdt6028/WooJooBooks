@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="net.ict.wjbooks.service.MemberServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-01T07:36:03" hostname="DENISELAPTOP" time="0.598">
+  <properties/>
+  <testcase name="insertMemberTest()" classname="net.ict.wjbooks.service.MemberServiceTest" time="0.598"/>
+  <system-out><![CDATA[16:35:54.689 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:35:54.705 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:35:54.749 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [net.ict.wjbooks.service.MemberServiceTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+16:35:54.766 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [net.ict.wjbooks.service.MemberServiceTest], using SpringBootContextLoader
+16:35:54.774 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [net.ict.wjbooks.service.MemberServiceTest]: class path resource [net/ict/wjbooks/service/MemberServiceTest-context.xml] does not exist
+16:35:54.775 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [net.ict.wjbooks.service.MemberServiceTest]: class path resource [net/ict/wjbooks/service/MemberServiceTestContext.groovy] does not exist
+16:35:54.775 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [net.ict.wjbooks.service.MemberServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:35:54.776 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [net.ict.wjbooks.service.MemberServiceTest]: MemberServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:35:54.855 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [net.ict.wjbooks.service.MemberServiceTest]
+16:35:55.003 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\DeniseLaptop\Desktop\ict_Final_project\wjbooks\build\classes\java\main\net\ict\wjbooks\WjbooksApplication.class]
+16:35:55.005 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration net.ict.wjbooks.WjbooksApplication for test class net.ict.wjbooks.service.MemberServiceTest
+16:35:55.189 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [net.ict.wjbooks.service.MemberServiceTest]: using defaults.
+16:35:55.190 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+16:35:55.219 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3301500b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@24b52d3e, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@15deb1dc, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6e9c413e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@57a4d5ee, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5af5def9, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3a45c42a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@36dce7ed, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@47a64f7d, org.springframework.test.context.event.EventPublishingTestExecutionListener@33d05366, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@27a0a5a2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7692cd34, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@33aa93c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@32c0915e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@106faf11, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@70f43b45, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@26d10f2e]
+16:35:55.225 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@e041f0c testClass = MemberServiceTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@6a175569 testClass = MemberServiceTest, locations = '{}', classes = '{class net.ict.wjbooks.WjbooksApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@79145d5a, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@7c2b6087, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7b324585, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5974109, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@40499e4f, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@7bf3a5d8], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.6)
+
+2022-12-01 16:35:55.712  INFO 3148 --- [    Test worker] n.ict.wjbooks.service.MemberServiceTest  : Starting MemberServiceTest using Java 11.0.2 on DeniseLaptop with PID 3148 (started by DeniseLaptop in C:\Users\DeniseLaptop\Desktop\ict_Final_project\wjbooks)
+2022-12-01 16:35:55.714 DEBUG 3148 --- [    Test worker] n.ict.wjbooks.service.MemberServiceTest  : Running with Spring Boot v2.7.6, Spring v5.3.24
+2022-12-01 16:35:55.714  INFO 3148 --- [    Test worker] n.ict.wjbooks.service.MemberServiceTest  : No active profile set, falling back to 1 default profile: "default"
+2022-12-01 16:35:57.197  INFO 3148 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-01 16:35:57.280  INFO 3148 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interfaces.
+2022-12-01 16:35:58.379  INFO 3148 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-01 16:35:58.551  INFO 3148 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-01 16:35:58.911  INFO 3148 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-01 16:35:59.154  INFO 3148 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-01 16:35:59.566  INFO 3148 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-01 16:35:59.639  INFO 3148 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-12-01 16:36:00.893  INFO 3148 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-01 16:36:00.906  INFO 3148 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-01 16:36:01.592 TRACE 3148 --- [    Test worker] o.s.s.a.i.a.MethodSecurityInterceptor    : Validated configuration attributes
+2022-12-01 16:36:02.069  WARN 3148 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-01 16:36:03.304 TRACE 3148 --- [    Test worker] eGlobalAuthenticationAutowiredConfigurer : Eagerly initializing {customSecurityConfig=net.ict.wjbooks.security.CustomSecurityConfig$$EnhancerBySpringCGLIB$$87905c7d@71135794, org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration$WebSecurityEnablerConfiguration=org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration$WebSecurityEnablerConfiguration@42fc744}
+2022-12-01 16:36:03.316  WARN 3148 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1f15f56a-1437-4efe-b290-6ec001532b1d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-01 16:36:03.684 DEBUG 3148 --- [    Test worker] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+2022-12-01 16:36:03.724 TRACE 3148 --- [    Test worker] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2022-12-01 16:36:03.724 TRACE 3148 --- [    Test worker] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2022-12-01 16:36:03.766  INFO 3148 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@73299197, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ef7145f, org.springframework.security.web.context.SecurityContextPersistenceFilter@4eb69e8d, org.springframework.security.web.header.HeaderWriterFilter@62d72091, org.springframework.security.web.csrf.CsrfFilter@6abbdcde, org.springframework.security.web.authentication.logout.LogoutFilter@12d33d7a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@221961f2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5c7c22ce, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1611ce1c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@37e15055, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e08ed28, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24b05292, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40cd02fc, org.springframework.security.web.session.SessionManagementFilter@2524f9bf, org.springframework.security.web.access.ExceptionTranslationFilter@696d28ee, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2e1b1d22]
+2022-12-01 16:36:03.931  INFO 3148 --- [    Test worker] n.ict.wjbooks.service.MemberServiceTest  : Started MemberServiceTest in 8.656 seconds (JVM running for 10.724)
+Hibernate: 
+    select
+        member0_.m_num as m_num1_0_,
+        member0_.reg_time as reg_time2_0_,
+        member0_.update_time as update_t3_0_,
+        member0_.m_email as m_email4_0_,
+        member0_.m_address1 as m_addres5_0_,
+        member0_.m_address2 as m_addres6_0_,
+        member0_.m_address3 as m_addres7_0_,
+        member0_.m_name as m_name8_0_,
+        member0_.m_pass as m_pass9_0_,
+        member0_.m_score as m_score10_0_,
+        member0_.m_tel as m_tel11_0_,
+        member0_.role as role12_0_ 
+    from
+        member member0_ 
+    where
+        member0_.m_email=?
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        member
+        (reg_time, update_time, m_email, m_address1, m_name, m_pass, m_tel, m_num) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
